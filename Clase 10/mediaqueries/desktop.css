@@ -1,0 +1,98 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+/* DESKTOP FIRST */
+
+html{
+    font-size: 16px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;}
+
+
+header h2{
+    font-size: 2.5rem; /* 1rem por defecto vale 16px. 1rem: equivale al font size del html si se cambia, se cambia el rem. si se que uno vale 16px hago regla de 3 para saber cuantos rem son 40 px en el media query cambio el font size del html no del h2 no hago un media header h2 { font-size:...} */
+    }
+
+nav{
+    display: flex;
+    gap: 15px;
+
+    } 
+    
+.link{
+    font-size: 1.2rem; /* dar rem a todas las fuentes */
+    list-style-type: none;
+    text-decoration: none;
+    color:black;
+
+}
+
+
+
+header .button {
+    display: none;
+}
+
+
+
+
+ @media screen and (max-width:830px){  /* de 830px para abajo aparece el boton nuevamente */
+    html{ 
+        font-size:10px; /* le bajo la medida */
+    }
+
+    header .button {
+        display: flex;
+        width: 20px;
+    }
+    nav{
+        display: none;
+    }
+} 
+
+
+
+
+
+
+/* MOBILE FIRST */
+/* nav {
+    display: none; }/* none: desaparecen los elementos: no se ven pero estan */
+
+
+/* header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-contents:center
+} */
+
+/* @media screen and (min-width:830px){ / * aparezcan nuevamente los links 
+    /* nav{
+        display: flex;
+        gap:15px;
+    }
+    header .button{
+        display: none;
+    }
+
+}   */
+
+
+
+
+/* medidas relativas en fuentes */

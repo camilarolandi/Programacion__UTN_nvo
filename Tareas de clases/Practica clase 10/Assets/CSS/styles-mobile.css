@@ -1,0 +1,200 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Jacquard+24&family=Lugrasimo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+/* MOBILE FIRST */
+:root{
+    --ff-primary:"DM Sans", sans-serif;
+    --fc-primary:#ffffff;
+    --bc-primary:#673DE6;
+    --bc-opbox: #5025D1;
+    --max-width:546px;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-primary);
+
+}
+
+/* contenedor de foto, texto y opiniones (TODO) */
+
+.foto-texto-opiniones{
+    background-color: var(--bc-primary);
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+
+
+}
+
+/* Parte de arriba: foto, titulo, checks y texto */
+.foto-texto-opiniones .foto-texto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: var(--max-width); 
+
+    
+}
+
+
+.foto-texto-opiniones .foto-texto .chica-foto{ /* foto de la chica */
+    width: 100%;
+}
+    
+
+.foto-texto-opiniones .foto-texto .sitio-seguro{ /* titulo, checks y texto */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding:5px;
+
+}
+
+h2{ /* titulo */
+
+    font-size: 1.5rem; /* quiero que sea de 28px y se q 1rem= 16px */
+    color: var(--fc-primary);
+    font-weight: bold;
+    line-height: 32px;
+    text-align: center;
+}
+
+.foto-texto-opiniones .foto-texto .sitio-seguro .cont-text-icon{ /* contenedor de titulos y checks */
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+
+    
+}
+
+.foto-texto-opiniones .foto-texto .sitio-seguro .cont-text-icon .texto-icon{  /* contiene cada titulo con su icono */
+    display: flex;
+    gap:30px;
+
+    
+}
+
+.foto-texto-opiniones .foto-texto .sitio-seguro .cont-text-icon .texto-icon .check{  /* check*/
+    color: var(--fc-primary);
+}
+
+.foto-texto-opiniones .foto-texto .sitio-seguro .cont-text-icon .texto-icon .texto{  /* texto*/
+    color: var(--fc-primary);
+    padding-top:15px;
+    
+}
+
+
+
+
+
+
+
+/* section 2: contiene cada cajita violeta oscuro (3) */
+.foto-texto-opiniones .opiniones { /* contiene todas las opiniones, nombre y flecha. Contiene cada CAJA VIOLETA*/
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 100%;
+    max-width: var(--max-width);
+    align-items: center;
+
+
+}
+
+
+.foto-texto-opiniones .opiniones .opi-icon{ /* cada caja violeta oscuro */
+    background-color: var(--bc-opbox) ; 
+    width: 100%;
+    padding: 30px;
+    border-radius: 4px;
+
+}
+
+.foto-texto-opiniones .opiniones .opi-icon .nombre-opi{ /* contiene nombre y opinion */
+    width: 100%;
+}
+
+.foto-texto-opiniones .opiniones .opi-icon .nombre-opi .nombre{ /* foto del nombre */
+    width: 250px;
+    padding-bottom: 5px;
+
+}
+.foto-texto-opiniones .opiniones .opi-icon .nombre-opi .opi{ /*opinion */
+    color: var(--fc-primary);
+    padding-bottom: 15px;
+    width: 100%;
+
+}
+
+.foto-texto-opiniones .opiniones .opi-icon .flecha{ /* contiene la flecha */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+
+.foto-texto-opiniones .opiniones .opi-icon .flecha .flecha-icon{ /* flecha */
+    color: var(--fc-primary);
+
+}
+
+
+
+@media screen and (min-width: 780px){
+    .foto-texto-opiniones .foto-texto{
+        max-width: 80%;
+    }
+    
+    .foto-texto-opiniones .opiniones{
+        max-width: 80%;
+    }
+}
+
+
+
+@media  screen and (min-width:1020px) { /* min: mayores o iguales a 1020px */
+
+        .foto-texto-opiniones{
+        align-items: center;
+        padding:60px;
+    }
+    
+    .foto-texto-opiniones .opiniones{
+        flex-direction: row-reverse;
+        justify-content: center;
+        max-width:none;
+        width: 100%;
+    }
+    .foto-texto-opiniones .foto-texto{
+
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-between;
+        max-width: none;
+        padding: 30px;
+        
+    }
+
+    .foto-texto-opiniones .foto-texto .chica-foto{
+
+        width:100%;
+        
+    }
+    
+
+    h2{
+
+        font-size: 2.25rem;
+    }
+} 
+

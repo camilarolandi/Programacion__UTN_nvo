@@ -1,0 +1,297 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Jacquard+24&family=Lugrasimo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+:root{
+    --ff-primary:"DM Sans", sans-serif;
+    --fc-primary:#ffffff;
+    --bc-primary:#673DE6;
+    --bc-opbox: #5025D1;
+    --max-width:1030px;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-primary);
+
+}
+
+/* header */
+header{
+    padding: 20px 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px 0 rgb(237,237,237);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    background-color:#ffffff;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 100px;
+
+
+}
+
+
+
+.logo-cont{
+    color: var(--color-texto-nav);
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+}
+
+
+.logo-cont .logos .logo{
+    width: 147px;
+    height: 30px;
+}
+
+.logo-cont .sel-leng{
+display: flex;
+gap:5px;
+align-items: center;
+padding-right: 15px;
+}
+
+.logo-cont .sel-leng .bandera{
+width: 35px;
+height: 20px;
+}
+
+.logo-cont .sel-leng .idioma{
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(29,30,32);
+}
+
+
+nav .links-container{
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+    list-style-type: none;
+    
+}
+
+nav .links-container .link-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+nav .links-container .link-item .item{
+text-decoration: none;
+color: var(--color-texto-nav);
+
+
+}
+
+nav .links-container .link-item .btn{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: 2px solid black ;
+    border-radius: 5px;
+    padding: 12px 16px;
+    
+}
+
+header .button{
+    display: none;
+    text-decoration: none;
+}
+
+
+/* contenedor de foto, texto y opiniones (TODO) */
+
+.foto-texto-opiniones{
+    background-color: var(--bc-primary);
+    padding: 100px 60px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+
+
+}
+
+/* Parte de arriba: foto, titulo, checks y texto */
+.foto-texto-opiniones .foto-texto{
+    width: 100%;
+    max-width: var(--max-width); 
+    display: flex;
+    
+}
+
+.foto-texto-opiniones .foto-texto .cont-foto{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+.foto-texto-opiniones .foto-texto .cont-foto .chica-foto{ /* foto de la chica */
+    width: 100%;
+}
+    
+
+.foto-texto-opiniones .foto-texto .sitio-seguro{ /* titulo, checks y texto */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding:5px;
+}
+
+h2{ /* titulo */
+
+    font-size: 2.25rem; /* quiero que sea de 40px y se q 1rem= 16px */
+    color: var(--fc-primary);
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.foto-texto-opiniones .foto-texto .sitio-seguro .cont-text-icon{ /* contenedor de titulos y checks */
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+
+    
+}
+
+.foto-texto-opiniones .foto-texto .sitio-seguro .cont-text-icon .texto-icon{  /* contiene cada titulo con su icono */
+    display: flex;
+    gap:30px;
+
+    
+}
+
+.foto-texto-opiniones .foto-texto .sitio-seguro .cont-text-icon .texto-icon .check{  /* check*/
+    color: var(--fc-primary);
+}
+
+.foto-texto-opiniones .foto-texto .sitio-seguro .cont-text-icon .texto-icon .texto{  /* texto*/
+    color: var(--fc-primary);
+    padding-top:15px;
+    
+}
+
+
+
+
+
+
+
+/* section 2: contiene cada cajita violeta oscuro (3) */
+.foto-texto-opiniones .opiniones { /* contiene todas las opiniones, nombre y flecha. Contiene cada CAJA VIOLETA*/
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    width: 100%;
+    max-width: var(--max-width);
+    justify-content: center;
+    
+}
+
+
+.foto-texto-opiniones .opiniones .opi-icon{ /* cada caja violeta oscuro */
+    background-color: var(--bc-opbox) ; 
+    width: 100%;
+    padding: 30px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.foto-texto-opiniones .opiniones .opi-icon .nombre-opi{ /* contiene nombre y opinion */
+    width: 100%;
+}
+
+.foto-texto-opiniones .opiniones .opi-icon .nombre-opi .nombre{ /* foto del nombre */
+    width: 250px;
+    padding-bottom: 5px;
+
+}
+.foto-texto-opiniones .opiniones .opi-icon .nombre-opi .opi{ /*opinion */
+    color: var(--fc-primary);
+    padding-bottom: 15px;
+    width: 100%;
+
+}
+
+.foto-texto-opiniones .opiniones .opi-icon .flecha{ /* contiene la flecha */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+
+.foto-texto-opiniones .opiniones .opi-icon .flecha .flecha-icon{ /* flecha */
+    color: var(--fc-primary);
+
+}
+
+
+@media screen and (max-width:1024px){ /* menores a... */
+    .foto-texto-opiniones{
+        padding: 96px 40px;
+    }
+    .foto-texto-opiniones .opiniones{
+        flex-direction: column;
+
+    }
+
+    .foto-texto-opiniones .foto-texto{
+        flex-direction: column-reverse;
+    }
+
+}
+
+@media screen and (max-width:760px){
+    .foto-texto-opiniones{
+        padding: 100px 20px;
+    }
+    h2{
+        font-size: 1.75rem;
+    } 
+}
+
+@media screen and (max-width:1180px){
+    header .button{
+        display: flex;
+        justify-content: end;
+        text-decoration: none;
+    }
+
+    nav {
+        display: none;
+
+    }
+    .logo-cont .sel-leng{
+        display: none;
+    }
+}

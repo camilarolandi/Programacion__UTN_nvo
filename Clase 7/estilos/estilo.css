@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* generalmente hay dos tipos de fuentes en una web: 1 para titulo y otra para texto */
+
+
+*{font-family: "Poppins", sans-serif;
+
+}
+
+h1{
+    color:rgb(255, 255, 255);
+    font-size: 50px; /* Por ahora uso pixeles */
+    letter-spacing: -1px; /* para textos o tiltulos muy grandes, espaciado entre las letras.Normalmente no se usa. */
+    word-spacing: 0px;
+    /* decoraciones de textos */
+    text-decoration: underline red dashed; /* propiedades que aceptan varios valores. text decoration con unidad de color dasher: rayitas o dotted: punteado */
+    text-shadow: /* puedo poner varias sombras. las divido con coma*/
+    0px 0px 10px rgb(123, 46, 224) ; /* se ve lindo :) */
+    /* necesita un orden. permite poner sombra al texto. En 0 no hace falta poner px. eje x, eje y, valor de difuminado: en unidad de tamaño: px o la que sea. El eje x mueve a la derecha y el eje y a la izquierda. valro de difum: mas valor mas difuminado en 0 no difumina (acerca/aleja el elemento de luz) TEXT SHADOW (pagina con sombras)
+    1° EJE X , 2°EJE Y, 3° VALOR DE DIFUMINADO, 4° COLOR */
+    background-color: black; 
+    width: 300px; /* ancho del background color */
+    /* height:100px ; */ 
+    text-align: center;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; estilo de la fuente. unidades de fuente: 4 fuentes distitnas si uso una sola. xq no todas las pc o paginas admiten todos los tipos de fuentes si no esta disponible una toma la otra. 
+    Si quiero otra fuente: google fonts. poppins o inter: las mas usadas*/ 
+    font-family: "Jacquard 24", system-ui;
+    
+    
+}
+
+p{
+    font-weight: 700; /* para la jerarquia de la fuente */
+}
+
+.parrafo{
+    font-weight: 300;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 15px;
+}

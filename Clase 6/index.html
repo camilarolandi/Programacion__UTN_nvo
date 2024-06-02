@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 6</title>
+    <!-- git ignore= archivos que no se suben a git (lo coloco en la carpeta ruta) -->
+    <!-- header=encabezado, main=cuerpo, footer=abajo (mas usado) -->
+    <!-- paginas mas complejas (layout) incluyen header, aside= contenido derecha, izquierda o ambos, al medio main y footer. Depende del contenido que quiera mostrar NO siempre son asi. ETIQUETADO SEMANTICO -->
+    <!-- DIV= caja contenedora para dividir, contener. En las web cajas comunes (layout) esa estructura sirve para el navegador, sabe el esquema, util para SEO (puntuacion mejor) 
+    Div= no comunica nada-->
+    <!-- otras etiquetas semanticas: SECCION= SECTION (puedo tener una seccion dentro de otra? SI pero con suficinete contenido cada una) Secciones dentro del MAIN -->
+    <!-- etiqueta del articulo= como un div. ejemplo reseas de google que es lo que mas me interesa? la reseña no quien la hizo o las estrellas. Importancia en el texto mas que en otros asepctos= ARTICULO = ARTICLE (caja especial donde lo mas importante es el texto) -->
+    <!-- contact us= formulario abajo de la pagina para contactar -->
+</head>
+<body>
+    <!-- estructura de la pagina. No se divide automaticamente, le da una semantica a la web. como un div (seccionan) pero refiere a secciones especiales de la pagina. -->
+    <header>Header</header>
+    <!--Contiene generalmente el icono de la pagina, el nombre. Tiene que estar dentro de un div ya que es generico. No se suelen dejar las imagenes sin contenedor. Navegador, parte de la pagina que nos permite ir a otras partes de la misma pagina-->
+    <!-- etiqueta NAV (Contenedor de links). 2 TIPOS DE NAVEGADORES= 1) despliega lista de subelementos, desplegables con links (navegador complejo: ej hostinger) y navegador simples (sin subelementos:ej css-tricks) -->
+    <!-- navegador simple= nav y link. navegador complejo: estructura de jerarquia: LISTAS -->
+    <!-- Lista que menos se usa OL (order list=lista ordenadas) tiene que tener un orden -->
+    <aside>Aside</aside>
+    <main>
+        <!-- el main contiene el contenido, puede tener secciones, dentro de las secciones puede haber otras secciones, articles y div -->
+        <section class="hero">
+        <!-- hero= seccion principal de la pagina, al navegador no le comunica nada el HERO es una cuestion de desarrollo. el carrusel de imagenes suele estar aca. -->
+        <h1>Todo Flores</h1>
+        <img src="./Assets/Images/flores.jpg" alt="flores" height="200px">
+        </section>
+        <section>
+            <h2>Pasos para hacer una empanada</h2>
+            <ol> <!-- no se usa mucho -->
+                <li>Prepar un bol con harina</li>
+                <li>Poner sal y ajo
+                <ul>
+                    <li>A gusto</li>
+                </ul>
+                </li>
+                <!-- list item -->             
+            </ol>
+        </section>
+        <section>
+            <h2>Ingredientes para empanadas</h2>
+            <ul><!-- unordered list: LA MAS USADA -->
+            <li>Harina</li>
+            <li>Sal</li>
+            <li>Agua</li>
+            <li>Ajo</li>
+            <li>Condimentos opcionales
+            <ul> <!-- subelemento de la lista condimentos -->
+                <li>Oregano </li>
+                <li>Pimenton</li>
+                <li>Pimienta</li>
+            </ul>
+            </li>
+            </ul>
+        </section>
+        <section>
+            <ol>
+                <li>
+                    <div>
+                        <h4>Funciones principales</h4>
+                    </div>
+                    <ul>
+                        <li>Email gratuito</li>
+                        <li>Dominio gratuito</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+    </main> 
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+    <!-- poner un div aca abajo no estaria bein, a veces si pero en general NO, uso section. Si uso div para poner contenido, como "hijo" del body o hijo de main es mejor usar funciones, raro!!! -->
+</body>
+</html>

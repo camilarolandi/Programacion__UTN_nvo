@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jacquard+24&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+
+*{ /* Normalizacion */
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* Trabajar con esa especificidad de clases*/
+
+.colors-cards{
+display: flex;
+gap: 20px;
+padding: 20px;
+width: calc(250px *3 + 20px * 3 + 20px * 4); /* tamaño de la caja, gap, padding. Si agrego border lo sumo, margin lo sumo. 250*3 xq son 3 cajas, 20px*2 por q hay 2 gap (2 espacios entre cajas) y 20px* 4 de padding por q hay 4 espacios (derecha/ izquierda y arriba/abajo) */
+flex-wrap: wrap;
+
+}
+
+/* color card style */
+
+.color-card{ /* caja de colores */
+display: flex;
+flex-direction: column;
+width: 250px;
+gap:15px;
+}
+
+
+.color-card .colors{ /* parte de arriba de la caja */
+display: flex;
+flex-direction: column;
+width: 100%; /* cambia en funcion al cambio en color-card */
+height: 250px;
+background-color: rgb(0, 255, 255);
+border-radius: 15px;
+overflow: hidden; /* para que no se "sobrepase" (rebalsar) el hijo. HIDDEN: todo lo q sobresale del padre se oculta. El que se usa mas es SCROLL. */
+
+/* div es una etiqueta de bloque: caracteristica toma todo el ancho disponible, no hace falta width */
+
+}
+
+.color-card .colors .color:nth-child(1){
+    /* cada uno de los colores */ /* nth-child: llama por orden a cada uno de los hijos con = clase el numero: es el orden. HIJOS DE COLORS!! */
+    height: 40%;/* % busca el alto del padre y toma el 40% */
+    
+
+}
+
+.color-card .colors .color:nth-child(2){
+    height: 30%;
+    
+
+}
+
+.color-card .colors .color:nth-child(3){ 
+    height: 17%;
+
+
+}
+
+.color-card .colors .color:nth-child(4){ 
+    height: 13%;
+    
+    
+
+}
+
+
+.color-card .color-card-controls{ /* parte de abajo de la caja */
+display: flex;
+flex-direction: row; /* viene por default */
+justify-content: space-between;
+align-items: center;
+
+
+}
+
+
+
+.btn-like {
+
+    height: 38px;
+    padding: 0 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.132);
+    border-radius:10px ;
+    gap: 5px;
+    color: rgb(47,47,47);
+
+
+}
+
+.color-card .color-card-controls .time{ /* tiempo */
+    color:#9D9D9D;
+    font-size: 14px;
+    
+
+
+}
+
+/* color card ends */

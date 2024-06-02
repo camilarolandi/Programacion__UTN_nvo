@@ -1,0 +1,26 @@
+body{ /* selector de elementos */
+}
+
+h2  {color: rgb(0, 119, 255);
+
+    font-size:50px;
+}
+
+.subtitulo-especial{ /* selector de clase */
+    color:green;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*{/* selector universal (llama a todos) */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.subtitulo-especial{
+    color: rgb(255, 0, 234)
+} /* a igual especificidad lo que define quien queda es el orden, el q esta mas abajo es el q queda */
+
+#super-especial{ /* CON #llamo al ID */ 
+    color:blueviolet; 
+}
+/* TOMO (LO CORTO) TODO EL CODIGO CSS SIN ETIQUETA STYLE Y USO LA ETIQUETA LINK PARA LLAMARLO*/

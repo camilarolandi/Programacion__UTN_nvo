@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- terabajamos los estilos en CSS (Cascading style sheet) lenguaje de estilo.-->
+    <!-- donde se escribe? 1)style in line: MUY MALA PRACTICA. NO HACER!!!. 2)llamar a la etiqueta dentro del head style y dentro escribir css. selectores, el mas simple igual al nombre de la etiqueta-->
+    <!--  -->
+<style>
+    
+</style>
+<link rel="stylesheet" href="./estilos.css"> <!-- con ruta relativa -->
+<!-- al terminal el valor poner; -->
+
+</head>
+<body>
+    <header>
+        <div>
+            <img src="" alt="">
+            <h2 style="color:red">Mercado libre</h2><!-- estilo en linea  (no recomendable) si quiero el mismo estilo para varios titulos debo copiar y pegar-->
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>Busca los mejores productos con los mejores precios</h1>
+        </section>
+        
+            <h2>Subtitulo</h2>
+            <h2>Subtitulo</h2>
+            <h2 class="subtitulo-especial">Subtitulo especial</h2>
+            <!-- slector de clases -->
+            <h2 class="subtitulo-especial">Subtitulo especial</h2>
+            <h2 class="subtitulo-especial" id="super-especial">Subtitulo super especial</h2> <!-- EL ID Por ahora no lo uso, se puede pero no recomendado porq se puede hacer con clases. EL ID ES UNICO!! No se puede repetir, se pueden usar muchas clases pero ID no -->
+            <!-- si no quiero que todos los h2 (xej) tengan el mismo estilo. como diferencio un h2 de otro? conviene el estilo en linea? NOOOO (no usarlo NUNCA) uso alguna forma de identificar h2-->
+            <!-- clases: dar nombre a la etiqueta (mas usado). llamo a la calse (. nombre de la calse) -->
+            <h2 class="subtitulo-especial super-especial">Subtitulo especial</h2>
+            <h3 class="subtitulo-especial">Hola</h3>
+        </main>
+</body>
+</html>

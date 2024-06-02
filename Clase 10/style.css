@@ -1,0 +1,94 @@
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: aquamarine;
+
+
+}
+
+
+
+.padre{
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 128, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 200px;
+    position: relative;
+}
+
+
+.hijo{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(5, 5, 5);
+    border: 1px  solid red;
+}
+
+
+.hijo:nth-child(1){
+background-color: blueviolet;
+}
+
+.hijo:nth-child(2){
+    background-color: rgb(197, 188, 64);
+    position: fixed; /* Se llama REALTIVE porq los hijos respetan el espacio del hermano como si el elemento q se movio estuviera ahi. nos indican de donde comienza a moverse. el elemento se mueve respecto a su espacio inicial */
+    /* absolute: cuenta los px desde el 00 de la pagina. absoluta xq no cuenta de su posicion original, desaparece se podria decir que esta separado del padre se mueve exactamente a donde le digo es como una coordenada. uso cuando no quiero que el elemento interactue con los hermanos cuando quiero que desaparezca el espacio original es dificil ajustar xq tomo la distancia desde el body. deberia estar desde el 0,0 del padre no del body. EL PADRE TIENE QUE SER DE ALGUN OTRO VALOR QUE NO SEA STATIC: RELATIVE y le doy (top/bottom y lef/right =0 ambos) */
+    left:200px; /* SI PONGO - SE MUEVE A LA IZQUIERDA Y + A LA DERECHA. No es recomendable usar las dos uso left en negativo y positivo */
+    /* POSITION: puedo cambiar: relative (apenas la asigno no se modifica nada: lo q hace es activar 5 propiedades, 4 mas importantes (top, bottom, left, right)*/
+    /* funcionan como margen: hace un espacio desde abajo o arriba. bottom hace la cant de px hacia abajo. si es left: mueve a la derecha y right mueve a la derecha por q hace el espacio a la derecha e izquierda. Puedo combinar ejes verticales con horizontales si pongo left y right toma en orden de prioridad (left vale mas q right) SON INCOMPATIBLES.*/
+    /* BOTTON y TOP incompatibles entre si (TOP tiene mas valor)  */
+    top:0px; /* tambien uso negativo */
+    z-index: 1; 
+
+    /* FIXED: 0,0 del body de la pagina no le puedo marcar un punto de inicio lo q literalmente hace es pegar algo sobre la pagina. se queda siempre ahi por mas que se mueva la pagina por ej como el menu de hostinger, es como un paneel inmovilizado lo puedo posicionar. Casi siempre los fixed*/
+
+}
+.hijo:nth-child(3){
+    background-color: rgb(84, 109, 253);
+    z-index: 2; /* el amarillo se superpone al celeste: z-index es el valor del posicion del eje x por defecto es 1 y lo mas bajo -1 (por debajo del body) positivos hay infinitos valores SE PUEDE USAR EN CUALQUIER ELEMENTO SIN NECESIDAD DE USAR EL POSITION*/
+}
+
+/* para mover elementos: no es la solucion para posicionar elementos, mover la caja. Se usa POSITION (display) */
+/* position por defecto: static. vamos a ver 5 posociones: static (no se percibe, se queda como esta) cambio */
+
+/* PARA HOSTINGER: header agrego position fixed (normal que desaparezcan los elementos lo q hago es indicar posicion inicial 0,0 y al header width del 100%, nos persigue pero se superpone con el box, se soluciona con z index en el header. CON STICKY (tambien sirve, se usa mas el fixed) */
+
+.buscador-contenedor{
+    position: relative; 
+    width: 300px;
+    display: flex; /* combino con el position */
+    align-items: center; /* cambio la posicion y con el top en el hijo le doy como un padding */
+    
+}
+
+
+.buscador-contenedor input {
+    width: 100%; /* el input sigue al padre, antes me aparecia en el otro extremo sin estar contenido */
+
+}
+
+.buscador-contenedor .lupita{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: red;
+    right: 16px; /* right 0 quiero q vaya a la derecha. se va al otro extremo porq el div tiene todo el ancho del padre como el padre es el body toma el ancho de la pantalla, bajo el tamaño del apdre*/
+    top: 0; 
+    /* para que quede en el medio no uso top, uso display */
+
+}
+

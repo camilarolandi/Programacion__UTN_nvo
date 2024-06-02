@@ -1,0 +1,65 @@
+/* todas las etiquetas tienen estilos por defecto */
+
+
+*{
+    /* para no tener estilos por defecto: NORMALIZACION/ NORMALIZE (Normalizacion Basica: trabajar con esto) */
+    box-sizing: border-box; /* border y padding se calculen hacia adentro */
+    margin:0;
+    padding:0;
+
+}
+
+
+
+body{ 
+
+    background-color: rgb(134, 134, 255);
+
+}
+
+
+.caja
+{
+width: 200px;
+height: 200px;
+background-color: black;
+border-radius: 10px;
+color:white;
+padding-left: 20px;
+margin-left: 50px;
+margin-top: 50´px;
+box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 295) 
+
+/* inset 0 0 3px 2px rgb(255, 247, 247),
+0px 0px 10px  */
+/* posicion sombra x, posicion sombra y, blur(difuminado) Mas cercano a 0 menos difuminado, base de la sombra (tamaño original de la sombra es el tamaño de la caja. crece la cant de px hacia afuera de la sombra: es la diferencia entre el text shadow y box shadow) */
+/*orden: inset (hacia adentro:como borde interno, efecto tridimensional. debo aclaralo) si no pongo nada es hacia afuera, x,y,blur, base, color: SOMBRA DE LA CAJA. SUPER IMPORTANTE EL ORDEN*/
+
+
+}
+
+ul{
+    padding-left: 20px; /* por defecto el padding es 40px, ideal:20px (padding-left) */
+}
+
+li{
+    list-style-type: roman;/* el profe pone none. */
+}
+
+h1{
+
+    color:white;
+    font-family: sans-serif;
+   /*  -webkit-text-stroke: 1px black; /* borde para las letras en google chrome */ 
+    
+}
+
+input{
+
+    margin-top: 50px;
+    margin-left: 50px;
+    border:none;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.226); /* se usa por ejemplo para que cuando selecciono un producto resalte */
+    padding: 12px 5px;
+
+}

@@ -1,0 +1,84 @@
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+.bod{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    background-color: rgb(247, 154, 78);
+    width: calc(300px * 4 + 20px * 3 + 20px * 4);
+    flex-wrap: wrap;
+
+}
+
+.boxA {
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+    border: 3px solid rgba(6, 53, 6, 0.726);
+    box-shadow: 0 3px 3px 0 rgba(184, 231, 184, 0.726);
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    
+
+}
+
+.boxB {
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+    border: 3px solid rgba(6, 53, 6, 0.726);
+    box-shadow: 0 3px 3px 0 rgba(184, 231, 184, 0.726);
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    
+}
+
+.boxC {
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+    border: 3px solid rgba(6, 53, 6, 0.726);
+    box-shadow: 0 3px 3px 0 rgba(184, 231, 184, 0.726);
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    
+}
+
+.boxD {
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+    border: 3px solid rgba(6, 53, 6, 0.726);
+    box-shadow: 0 3px 3px 0 rgba(184, 231, 184, 0.726);
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+}
+
+ .box{ /* Cda cajita */
+    
+    height: 100px;
+    width: 100px;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: blue;
+
+} 
+
+./* boxA .maceta{
+    width: 100x;
+    height: 100px;
+} */

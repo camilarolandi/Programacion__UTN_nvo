@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+<h2> Formulario </h2> 
+<form >
+    <div>
+            <label for="username">Ingresa tu nombre de usuario</label>
+            <!-- Label es la etiqueta: en html no podemos escribir solo el texto FOR: Mismo valor que el ID del imput al que se hace referencia (accesibilidad:ej para personas no videntes) SIEMPRE USAR EL FOR!!!! Si no uso label mi pagina obtiene una puntuacion inferior.  -->
+            <input type="text" name= "username" id="username" placeholder="Camila_r01" required maxlength="10" minlength="5">
+            <!-- placeholder: texto q se muestra en el input. En que FORMATO se peude escribir ahi, texto?numeros?simbolos? No deberia ser igual a la etiqueta (ejemplo) NO es lo mismo que LABEL ya que LABEL da accesibilidad. Placeholder puede estar o no-->
+            <!-- VALIDACIONES=maxlenght= cantidad max de caracteres. Minlenght= cantidad min de caract. se pueden borrar-->
+            <span style="Color: red">El dato ingresado es incorrecto</span>
+        </div>
+        <br>
+        <div>
+            <label for="password">Ingrese su contraseña</label>
+            <input type="password" name= "password" id="password" placeholder="Ab1_Cde3-4">
+        </div>
+        <br>
+        <div>
+            <label for="email">Ingrese su Email</label>
+            <input type="email" name= "email" id="email" placeholder="hola_01@gmail.com">
+        </div>
+        <br>
+        <div>
+            <label for="pais">Seleccione un pais</label>
+            <BR>
+            <select name="pais" id="pais">
+                <option value="AR">Argentina 🏆</option>
+                <option value="FR">Francia</option>
+                <option value="CH">China</option>
+                <option value="NO" selected disabled>No seleccionado</option>
+                <!-- Si no pongo selected y pongo no seleccionar ne cualquier orden se va a ver en el orden donde lo puse, si pongo selected siemore se muestra primero no importa donde este. disabled: el no seleccionar no se puede elegir y si o si seleccioanr una opcion(lo pongo al ultimo)-->
+                <!--el value es lo que se guarda  -->
+            </select>
+        </div>
+        <div>
+            <BR>
+            <label for="pais-1">Ingrese un pais
+                <BR>
+                <span>Argentina</span><input type="radio" name="pais-1" id="AR">
+                <span>Francia</span><input type="radio" name="pais-1" id="FR">
+                <span>China</span><input type="radio" name="pais-1" id="CH">
+                <span>No seleccionado</span><input type="radio" name="pais-1" id="NO">
+                <!-- Para que funcione el radio y se pueda seleccionar uno u otro tengo que poner el mismo name a todas las opciones el que debe ser igual al for -->
+            </label> 
+        </div>
+        <BR>
+            <div>
+                <label for="file">Cargue su archivo</label>
+                <input type="file" name="file" id="file" accept="image/jpeg,image/png">
+            </div> 
+            <br>
+        <div>
+            <label for="mensaje">Ingrese su mensaje</label>
+            <br>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="¡Hola!"></textarea>
+            <!-- cols= cantidad de caracteres que puedo escribir en la linea y rows= filas -->
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Confirmar">
+            <!-- por defecto me dice enviar en mi idioma si pongo value puedo poner el texto -->
+            <button type="submit">Aceptar</button>
+            <!--Si uso button poner type submit para asegurarme que el formulario se envie. BUTTON sirve paraa poner iconos, INPUT no-->
+            <button type="reset">Reestablecer</button>
+            <!-- reset: poco usado. sirve para reestablecer -->
+        </div>
+    
+    </form>
+<!-- action: por ahora no se usa, la vemos en back-end -->
+<!-- etiquetas de entrada de datos. INPUT: type (), name(lo vemos en java) determina como se va a enviar, id() -->
+<!-- importante que la informacion este contenida en un formulario: no da estilo. dentro puedo tener todas las etiquetas que quiera -->
+<!-- valores de input mas comunes= texto (mas usado=alfa numerico. name=lo q quiero. id= lo mismo q el nombre -->
+</body>
+</html>

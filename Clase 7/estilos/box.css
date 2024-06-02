@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* ETIQUETAS EN BLOQUE (BLOCK):No se pueden alinear con otros elementos TOMAN TODO EL ANCHO (pero le puedo dar alto y ancho): div nav, header, section, article, aside, footer, body, h1 ,h2 ,h3 ,p ,form , ul, li
+ETIQUETAS EN LINEA (INLINE) NO le puedo dar ancho y alto (width o heigth) TIENEN EL ANCHO DE LA ETIQUETA : label, a, span, b (bold), strong, i( italic)
+INLINE-BLOCK (multimedia) le puedo dar ancho y alto: img, input, button, select, textarea, video, audio, iframe */
+
+*{
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;/* border-box:padding se contabiliza hacia adentro del ancho original en vez de sumar al width y height. por defecto en content-box */ 
+    /*PONGO LA PROPIEDAD EN EL * PARA QUE SE APLIQUE A TODOS */
+
+}
+
+
+.caja {
+    background-color: rgb(0, 0, 0);
+    height: 200px; /* caja q toma todo el ancho de la pagina: display en bloque */
+    width: 200px;
+    display: inline-block; /* inline-block: se usa mas que nada para que pueda dar alto y ancho. */
+    margin-top: 30px; /* margin top: hacia arriba */
+    color:beige;
+    padding: 10px; /* Del borde hacia adentro */
+    border: 10px solid red; /* da el borde a la caja */
+    margin-left: 50px; /* se mueve la caja */
+   
+} 
+
+h1{
+    background-color: blueviolet;
+
+}
+
+/* a{ 
+    background-color:brown ; /* elemento en linea: mide lo q mide el ancho de su contenido como la etiqueta span  */
+    /* width: 200px;
+    display: inline-block;¨}  *//* cambiar el ancho (block:crece todo el ancho. inline-block: le puedo dar un ancho) */
+    /* se ve link uno debajo de otro por el widht: como que no alcanza el ancho de la pagina y se muestra asi pero por defefcto deberia ser uno debajo del otro */
+    
+
+span{
+    background-color: rgb(255, 113, 243);
+    }
+
+.input{
+    width: 100px;
+    height: 50px;
+}
+
+header{
+   
+    color: white;
+}
+
+.logo{
+
+    background-color:chartreuse;
+    width:50px;
+    height:50px;
+}
+
+
+nav{
+    text-align: end; /* normalmete no se trabaja */
+}
+
+.link{
+    display: inline-block;
+    background-color:transparent ;
+    background-color: rgb(0, 225, 255);
+    width: 100px;
+    text-align: center;
+}
+
+.cajaresultado{
+    color:#555555;
+    background-color: #89f133;
+    border-top:4px solid rgb(0, 162, 255);
+    border-bottom: 5px dashed red;
+    width: 700PX;
+    height: 60PX;
+    padding:15px 30px 15px 30px; /* padding tiene un sentido horario: top, right, bottom, left. MISMO CONCEPTO APLICA A MARGIN!!!*/
+    font-size:16px;
+    border-radius:5px ;
+
+}

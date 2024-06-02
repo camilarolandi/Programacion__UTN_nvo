@@ -1,0 +1,51 @@
+/* flexbox:mover, acomodar,colocar elementos. Acomodar multiples elementos, se aplica en general para mover todos los elementos y para poder mover elementos en particular. */
+/* felxbox: se le da el estilo al padre: llamo al padre y despues se acomodan los hijos. padre es el que ordena!! */
+
+
+*{ /* Normalizacion */
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: sans-serif;
+
+}
+
+.padre{
+
+    background-color: green; /* padre: tamaño de la sumatoria de los hijos. */
+    height: 100vh;/* vh: viewport height (viewport:parte visual de la pagina y height: alto. medida relativa: no siempre vale lo mismo (varia segun el contexto) */
+    /* width: 50vw; /* viewport width */ 
+    display: flex; /* activa al flex dentro del padre. los elementos se alinean (propidad x defecto) nos habilita las propiedades. SIEMPRE USO display flex EN EL PADRE!!!*/
+    flex-direction: row; /* toma 4 valores. valor por derecho: row, puedo poner column: uno debajo del otro y no hay espacios  */
+    /* flex-direction: row-reverse; /* se invierten las posiciones y se mueve hacia la derecha y column reverse: invierte el orden de la columna. RARA VEZ SE USA */ 
+    /* row-gap:100px; espacio entre filas/* 
+    /* column-gap: 50px;/* espacio entre columnas */ 
+    gap: 50px; /* propiedad de espaciado entre HIJOS. NO de borde MUY UTILIZADA!!! EN TODAS LAS PAGINAS Y MUCHAS VECES!! SE RESPETA!. Por si solo hacia ambos lados. 2 subtipos: column gap (espacio entre columnas) y row gap.  gap solo toma para ambos la misma distancia: generalmente se usa el gap sin especificar. Normalmente se usa poco row-gap y column gap.*/
+    flex-wrap: wrap;/* achico el tamaño de la pantalla se bajan las cajas. cuando no hay espacio, baja: se respeta el tamaño de la caja. Por defecto: no wrap, si quiero que se active wrap. */
+    justify-content:space-around ;/* mover elementos en el eje x start: izquierda, end: derecha. space: between (mas usado: permite espaciar a maximo los elementos se resta 1) combinable con padding. SPACE EVENLY: toma espacio sobrante si no hay espacio restante no se aplica la propiedad. (contabilizo los choques y divido 100 por esos choques: suma =100) otra: space-around (100/cantidad de hijos y ese es el espacio entre cada hijo y a los costados se achica a la mitad el tamaño (mitad de 100/cant hijos)*/
+    /* padding: 0 50px;/* tecnixa muy usada: combino padding con space between */ 
+    align-items:center ;/* ajusta en el eje vertical: center, end, start.*/
+    /* FLEX BOX: Trabaja unidimensional en el eje x o y. Lo defino con la direccion (fex direction). Una cosa es dimension (fila o columna) y otra el eje x a y (eje x se ajusta con justify contents y eje y se ajusta con aling items) PARA FILA */
+    /* TRABAJO EN COLUMNA: SE INVIERTEN LOS EJES(x: vertcal e y horizontal.) SE INVIERTEN LAS PROPIEDADES */
+    
+    /* default: FLEX DIRECTION ROW
+    eje x: justify contents y eje y: aling contents */
+    /* FLEX DIRECTION COLUMN
+    eje x: aling contents y eje y: justify contents */
+
+}
+
+.padre .hijo { /* todos los hijos del padre ese estilo. Se suman especificidades (vale mas que .hijo) */
+
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgb(160, 90, 218);
+    /* display: inline-block; /* me pone uno al lado del otro, se ven espacios por el div. el inlime block trata como texto deberia hacer todo en una linea y no esta bien, no es viable, por eso usar FLEX y si pongo text align center lo centra xq lo toma con un texto*/
+    
+
+}
+
+.padre .especial{ /* hijo directo uso > (casi no se usa) pero si dejo espacio busca dentro del padre */
+    background-color: red; /* si dejo .especial no tiene misma especificidad que .padre . hijo para que se aplique el color = especificidad o mayor y por cascada gana el rojo */
+}
