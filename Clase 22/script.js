@@ -138,7 +138,7 @@ const obtenerUsuarioPorID = async(id)=>{
     const URL_API = "https://jsonplaceholder.typicode.com/users/1"
     const userInfoHTML = document.getElementById("userinfo")
     userInfoHTML.innerHTML = "<h2>Cargando...</h2>"
-    const response = await fetch(URL_API + "/users/"+ id,{
+    const response = await fetch(URL_API + '/users' + id,{
         method: "GET",
     })
     const user = await response.json()
