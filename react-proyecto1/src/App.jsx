@@ -2,6 +2,10 @@
 import React from 'react'
 import {PI,doSomething,Titulos} from "./funciones"
 import {Carrito} from './Components/Carrito/carrito'
+import {Counter} from './Practica/counter'
+import {Text} from './Practica/mostrar-ocultar'
+
+
 
 
 /* puedo escribir en flecha. pero SIEMPRE mayuscula en la primer letra. ESCRIBO HTML desde APP NO desde index  */
@@ -20,6 +24,9 @@ const App = () => {
      {/*  <ProductCard/> */}
       <Carrito/>
       <Titulos/>
+      <Counter/>
+      <Text/>
+      
   
 
     </div>
