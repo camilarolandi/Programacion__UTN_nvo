@@ -1,9 +1,10 @@
 /* cuando escribo JSX hago el import con import */
 import React from 'react'
-import {PI,doSomething,Titulos} from "./funciones"
+import { ProfileCard } from './clase 24/profileCard'
+/* import {PI,doSomething,Titulos} from "./funciones"
 import {Carrito} from './Components/Carrito/carrito'
 import {Counter} from './Practica/counter'
-import {Text} from './Practica/mostrar-ocultar'
+import {Text} from './Practica/mostrar-ocultar' */
 
 
 
@@ -13,22 +14,45 @@ import {Text} from './Practica/mostrar-ocultar'
 /* function App() { */
   
 
-console.log(PI)
-doSomething()
+/* console.log(PI)
+doSomething() */
 
 
 const App = () => {
-    return (
+
+  
+  const persona_1 =  {
+      nombre: "pepe",
+      edad: 89,
+      ubicacion: "calle 123",
+
+    }
+  
+    const persona_2 = {
+      nombre: "juan",
+      edad: 20,
+      ubicacion: "calle 456",
+
+    }
+
+  return (
     <div>
       {/* <h1>Hola desde react</h1> */}
      {/*  <ProductCard/> */}
-      <Carrito/>
+      {/* <Carrito/>
       <Titulos/>
       <Counter/>
       <Text/>
+     */}
       
-  
 
+        <ProfileCard 
+          persona= {persona_1}
+        />
+
+        <ProfileCard 
+          persona= {persona_2}
+        />
     </div>
   )
 }
@@ -62,7 +86,7 @@ USAR UN FRAGMENTO (Para evitar crear elementos padres, se comporta como tal pero
 
 
 /* lo llamo donde quiero usarlo con </> */
-const ProductCard = () => {
+/* const ProductCard = () => {
   return (
 
   <>
@@ -83,7 +107,7 @@ const ProductCard = () => {
   )
 
 }
-
+ */
 
 export default App
 
