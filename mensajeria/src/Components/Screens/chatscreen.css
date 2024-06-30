@@ -1,0 +1,38 @@
+
+
+
+*{ 
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+
+body{
+    background-color: #f7c3e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+
+
+.chat{
+
+    height: 600px;
+    width: 400px;
+    background-image: url(./Assets/Images/pink.jpg);
+    border: 3px solid #88004f;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    overflow: hidden;
+    justify-content: space-between;
+
+}
+

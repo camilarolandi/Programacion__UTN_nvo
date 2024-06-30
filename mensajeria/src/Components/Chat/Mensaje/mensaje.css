@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jacquard+24&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+*{ 
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.contenedor-chats{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+/*     gap:5px; */
+
+
+
+
+}
+.contenedor{
+    width: 45%;
+    height: 100%;
+    background-color: #ff7dc9;
+    border: 3px solid #88004f ;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.author{
+    color:rgb(70, 0, 55);
+    font-size: 90% ;
+    font-weight: bold;
+    width: 100%;
+    height: 20%;
+}
+
+.mensaje-texto{
+    width: 100%;
+    height: 60%;
+    font-size: 80%;
+}
+
+
+.contenedor-inferior{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+font-size: 65%;
+height: 20%;
+width: 100%;
+
+}
+
+/* .estado-coontenedor{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+} */
+
+.estado{
+    display: flex;
+    gap: 5px;
+    width: 100%;
+}
+
