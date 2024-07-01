@@ -12,11 +12,11 @@
 .header{
     background-color:#88004f;
     border-bottom: 3px solid #88004f;
-    height: 14%;
+    height: 15%;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 5px 15px ;
     align-items: center;
     gap:10px;
     overflow: hidden;
@@ -26,25 +26,26 @@
 .contenedor-contacto{
     display: flex;
     justify-content: start;
-    padding: 10px 20px;
+    padding: 5px;
     align-items: center;
     gap:10px;
     overflow: hidden;
     width: 60%;
+    height: 100%;
 }
 
 
 
 .nombre{
-    font-size: 20px;
+    font-size: 110%;
     font-weight: bold;
     width: 10%;
     text-align: center;
 }
 
 .foto{
-    height: 65px;
-    width: 65px;
+    height: 60px;
+    width: 60px;
     border-radius: 100%;
 }
 

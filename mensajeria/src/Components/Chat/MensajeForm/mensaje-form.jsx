@@ -5,7 +5,7 @@ export const  MensajeForm= () => {
     return (
         <div className='form-mje-enviar'>
 
-            <input className= "input-texto" type="text" name="mensaje" id="mensaje"/>
+            <input className= "input-texto" type="text" name="mensaje" id="mensaje" placeholder='Mensaje'/>
             
             <div className='btns-form-enviar'>
                 <button className='btn' type='submit'><i class="bi bi-send"></i></button>

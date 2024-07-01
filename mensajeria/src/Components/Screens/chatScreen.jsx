@@ -1,6 +1,5 @@
 import React from 'react'
 import "./chatscreen.css"
-/* import { ChatHeader } from '../Chat/Header/chatHeader' */
 import { ListaMensajes } from '../Chat/ListaMensaje/listaMjes'
 import { ChatHeader, MensajeForm } from '../Chat'
 
@@ -13,46 +12,56 @@ export const ChatScreen = () => {
     
     const MOOK_MENSAJES = [
     {
-        author: 'Yo',
+        author: 'Lola',
         text: 'Hola, todo bien? ',
-        estado: 'visto',
+        estado: 'Visto',
         day: 'Hoy',
         hour: '13:15',
         id: '1'
     },
     {
-        author: 'Lola',
+        author: 'Yo',
         text: 'Hola! todo bien y vos?',
-        estado: 'visto',
+        estado: 'Visto',
         day: 'Hoy',
         hour: '13:16',
         id: '2'
     },
     {
-        author: 'Yo',
+        author: 'Lola',
         text: 'Me alegro! Yo estoy muy bien',
-        estado: 'visto',
+        estado: 'No entregado',
         day: 'Hoy',
         hour: '13:17',
         id: '3'
     },
     {
-        author: 'Lola',
-        text: 'Que hacemos esta noche ? 🎉👯',
-        estado: 'visto',
+        author: 'Yo',
+        text: 'Que hacemos esta noche ?',
+        estado: 'Entregado',
         day: 'Hoy',
-        hour: '13:17',
+        hour: '13:18',
         id: '4'
-    }
+    },
+    {
+        author: 'Yo',
+        text: 'Vamos a la fiesta ? 🎉👯',
+        estado: 'No entregado',
+        day: 'Hoy',
+        hour: '13:18',
+        id: '5'
+    },
+
+
 ]
     return (
-    <>
+    <div className='chat'>
         <ChatHeader/>
         <ListaMensajes mensajes_info = {MOOK_MENSAJES}/>
         <MensajeForm/>
     
         
-    </>
+    </div>
     )
 }
 

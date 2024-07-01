@@ -9,11 +9,11 @@ import { ChatScreen } from './Components/Screens'
 const App = () => {
 
 return(
-  <div className='chat'>
+  <>
 
   <ChatScreen/>
   
-  </div>
+  </>
 
 )
 
