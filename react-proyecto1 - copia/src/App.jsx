@@ -1,6 +1,9 @@
 /* cuando escribo JSX hago el import con import */
-import React from 'react'
-import { ColorCardList } from './colorList'
+import React, { useState } from 'react'
+import { ColorCardList } from './TareaColorHunt/colorList'
+import { Contador } from './contador/contador'
+
+
 
 const colors_card_info = [
     {
@@ -53,11 +56,54 @@ const colors_card_info = [
     }
 ]  
 
-const App = () => {
 
-return(
+    
+/* ESTADO: desestructuracion de un array (el valor de retorno de useState) que proviene de la fn useState (fn q crea un estado, proviene de react) useState retorna un array donde el 1er elemento es el valor actual del estado y el 2do una funcion para cambiar el valor del estado
+IMPORTARLA SIEMPRE 
+useState recibe x parametro el valor inicial*/
+
+
+
+const App = () => {
+    const [colorCardInfoList, setColorCardInfo]= useState(colors_card_info)
+
+    const handleSubmitNewColorCard = (e)=>
+{
+e.preventDefault()
+const newColorCard ={
+colores: [],
+likes: Math.floor(Math.random() * 100),
+fecha: e.target.fecha.value
+}
+for (let i=1; i <= 4; i = i+1){
+newColorCard.colores.push(e.target ["color-" + i].value)
+}
+/* clonacion del array */
+setColorCardInfo([...colorCardInfoList, newColorCard])
+}
+    return(
     <div className='carta'> 
-        <ColorCardList colors_info = {colors_card_info}/>
+        <ColorCardList colors_info = {colorCardInfoList}/>
+      {/*   <Contador limit={10}/> */}
+        <form className="form-carta-colores" onSubmit = {handleSubmitNewColorCard}> 
+            <h2>Crea tu carta de color</h2>
+            <div >
+                <label>Ingrese color 1</label>
+                <input id ="color-1"  name="color-1" type="text" />
+                <label>Ingrese color 1</label>
+                <input id ="color-2"  name="color-2" type="text" />
+                <label>Ingrese color 1</label>
+                <input id ="color-3"  name="color-3" type="text" />
+                <label>Ingrese color 4</label>
+                <input id ="color-4"  name="color-4" type="text" />
+            </div>
+            <div>
+                <label htmlFor="fecha" id="fecha" name="fecha">Ingrese fecha</label>
+                <input id ="fecha" name="fecha" type="text" />
+
+            </div>
+            <input type="submit" />
+        </form>
     </div>
 
 )
