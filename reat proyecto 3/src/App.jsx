@@ -1,6 +1,7 @@
 import React from 'react'
-import { Cart, Contact, Detail, Home } from './Pages'
+import { Cart, Contac, Contact, Detail, Home } from './Pages'
 import { Route, Routes } from 'react-router-dom'
+
 
 
 
@@ -12,8 +13,8 @@ function App() {
     <Route path = "/" element = {<Home/>}/>
     <Route path = "/detalle/:productId" element = {<Detail/>}/>
     <Route path = "/contacto" element = {<Contact/>}/>
-    <Route path = "/carrito" element = {<Cart/>}/>
-
+    <Route path = "/carrito/" element = {<Cart/>}/>
+    <Route path = "/contac/:contactId" element = {<Contac/>}/>
 </Routes>
 
     )

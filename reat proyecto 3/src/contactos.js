@@ -8,7 +8,7 @@ export const lista_contactos =[
         Email: "lola@gmail.com" ,
     },
     {
-        Nombre:  "Lolo",
+        Nombre:  "Pedro",
         Apellido: "Rosas" ,
         id: 2,
         Telefono: '358434309',
@@ -22,5 +22,13 @@ export const lista_contactos =[
         Telefono: '3584673456',
         Direccion:"Av calle 678",
         Email: "rocky@gmail.com" ,
-    }
+    },
+    {
+        Nombre:  "Juancito",
+        Apellido: "Gomez" ,
+        id: 4,
+        Telefono: '3584577456',
+        Direccion:"Ruta 04",
+        Email: "juancito@gmail.com" ,
+    },
 ]

@@ -5,7 +5,8 @@ export const Navbar = () => {
         return (
     <header>
         <nav>
-            <NavLink to={"/contacto"}>Contacto</NavLink>
+            <NavLink to={"/contacto"}>Contactos</NavLink>
+            <br/>
             <NavLink to={"/carrito"}>Carrito</NavLink>
         </nav>
 
