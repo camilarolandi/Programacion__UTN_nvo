@@ -12,11 +12,15 @@ const producto = lista_productos.find(producto=>producto.id === Number(productId
 
     return (
 
-    <div>
+        <div>
         <h1>{producto.titulo}</h1> <span>#{producto.id}</span>
         <h2>Precio:${producto.precio}</h2>
         <button>Comprar</button>
 
     </div>
+    
+
     )
+
+
 }

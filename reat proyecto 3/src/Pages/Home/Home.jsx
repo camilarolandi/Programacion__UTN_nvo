@@ -5,6 +5,7 @@ import { Navbar } from '../../Components'
 
 
 
+
 export const Home = () => {
     return (
     <div>
@@ -18,16 +19,12 @@ export const Home = () => {
                         <h2>{producto.titulo}</h2>
                         <span>Precio: ${producto.precio}</span>
                         <Link to = {"/detalle/" + producto.id}>Ver detalle</Link>
-                        <hr/>
+                        <hr/>    
                     </div>
-
-
                     
                 )
             })}
-
-        </div>
-
+            </div>
     </div>
     )
 }
