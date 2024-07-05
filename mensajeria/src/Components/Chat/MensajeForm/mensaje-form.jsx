@@ -1,19 +1,23 @@
 import React from 'react'
 import "./mensajeform.css"
 
-export const  MensajeForm= () => {
-    return (
-        <div className='form-mje-enviar'>
+    
+export const  MensajeForm= ({enviarMensaje}) => {
+        
+    const handleSubmitNewMensaje =(e) =>{
+            e.preventDefault()
+            enviarMensaje(e.target[0].value)
+        }
 
+    return (
+        <div className='form-mje-enviar' >
+        
+        <form className='formulario' onSubmit = {handleSubmitNewMensaje}>
+        
             <input className= "input-texto" type="text" name="mensaje" id="mensaje" placeholder='Mensaje'/>
-            
-            <div className='btns-form-enviar'>
-                <button className='btn' type='submit'><i class="bi bi-send"></i></button>
-                <button className='btn' type='submit'><i class="bi bi-camera"></i></button>
-                <button className='btn' type='submit'><i class="bi bi-plus-lg"></i></button>
-            </div>
-                
-        </div>
+            <button className= "btn" type='submit'><i class="bi bi-send"></i></button>
+        </form>
+
+    </div>
     )
 }
-

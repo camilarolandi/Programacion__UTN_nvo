@@ -7,7 +7,6 @@ import { ChatScreen } from './Components/Screens'
 
 
 const App = () => {
-
 return(
   <>
 
@@ -20,5 +19,4 @@ return(
 }
 
 export default App
-
 

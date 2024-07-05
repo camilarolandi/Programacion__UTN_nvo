@@ -5,7 +5,7 @@ import "./mensaje.css"
 
 
 export const Mensaje = ({mensajes}) => {
-    const {author,text,estado,day,hour} = mensajes
+    const {author, text, estado, day, hour} = mensajes
     
     let dir
     let color

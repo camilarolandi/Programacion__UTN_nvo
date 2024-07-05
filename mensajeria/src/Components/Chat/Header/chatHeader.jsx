@@ -14,10 +14,10 @@ export const ChatHeader = () => {
         </div>
         
         <div className='btns-header'>
-            <button className = "btn"><i class="bi bi-telephone"></i></button>
-            <button className='btn'><i class="bi bi-camera-video"></i></button>
+            <button ><i class="bi bi-telephone"></i></button>
+            <button ><i class="bi bi-camera-video"></i></button>
         </div>
-        
+    
     </div>
     )
 }
