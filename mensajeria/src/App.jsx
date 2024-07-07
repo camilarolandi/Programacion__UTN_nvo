@@ -4,26 +4,22 @@ import React from 'react'
 
 import { Route, Routes } from 'react-router-dom'
 import { Contactos } from './Components/Contactos'
-import { ChatScreen } from './Components/Screens/chatScreen'
 import { Prueba } from './prueba/Prueba'
-import { Mensaje } from './Components/Chat'
+import { Prueba2 } from './Components/prueba2/Prueba2'
+import { Header } from './Components/Contactos/Header-1/Header'
 
 
 
 
 const App = () => {
 return(
-/* 
-    <ChatScreen/>  */
-    
+
     <Routes>
         <Route path = "/" element = {<Contactos/>}/>
-        {/* <Route path = "/detalle/:productId" element = {<Detail/>}/> 
-        <Route path = "/chat/" element = {<ChatScreen/>}/> */}
-      <Route path = "/chat/" element = {<ChatScreen/>}/> 
-       <Route path = "/prueba/:pruebaID" element = {<Prueba/>}/>  
-      {/* <Route path = "/mensaje/:mensajeId" element = {<Mensaje/>}/>  */}
-      
+        <Route path = "/prueba/" element = {<Prueba/>}/> 
+		<Route path = "/prueba2/:pruebaID" element = {<Prueba2/>}/> 
+		<Route path = "/header/" element = {<Header/>}/> 
+        <Route path="/contactos/:pruebaID" element={<Contactos />} />
         
     </Routes>
     )

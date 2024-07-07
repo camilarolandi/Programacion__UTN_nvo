@@ -8,17 +8,42 @@ export const MOOK_CONTACTOS =[
             telefono: '3584678909',
             direccion:"San Juan 123",
             email: "lola@gmail.com" ,
-            thumbnail: "https://img.freepik.com/vector-premium/ilustracion-vectorial-perfil-avatar-mujer-linda_1058532-14592.jpg",
+            thumbnail: "https://www.creartuavatar.com/images/f10.svg",
             ultima_conexion: 'ayer',
             mensajes:[
                         {
-                            author: 'Lola',
-                            text: 'SOY LOLA ',
+                            author: 'Yo',
+                            text: 'Hola, todo bien? ',
                             estado: 'Visto',
                             day: 'Hoy',
                             hour: '13:15',
                             id: '1'
-                            }
+                            },
+                            {
+                                author: 'Lola',
+                                text: 'Hola, si y vos? ',
+                                estado: 'Visto',
+                                day: 'Hoy',
+                                hour: '13:15',
+                                id: '2'
+                            },
+                            {
+                                author: 'Yo',
+                                text: 'Todo bien ',
+                                estado: 'Visto',
+                                day: 'Hoy',
+                                hour: '13:16',
+                                id: '3'
+                            },
+                            {
+                                author: 'Yo',
+                                text: 'Que haces? ',
+                                estado: 'Visto',
+                                day: 'Hoy',
+                                hour: '13:17',
+                                id: '4'
+                            },
+                            
                         ]
     },
     {
@@ -28,16 +53,24 @@ export const MOOK_CONTACTOS =[
             telefono: '358434309',
             direccion:"Belgrano 333",
             email: "pamela@gmail.com" ,
-            thumbnail: "https://img.freepik.com/vector-premium/avatar-personaje-mujer-hermosa-traje-negocios_491904-64.jpg",
+            thumbnail: "https://www.creartuavatar.com/images/f9.svg",
             mensajes:[
                         {
                             author: 'Yo',
-                            text: 'SOY PAMELA ',
+                            text: 'Holisss ',
                             estado: 'Visto',
                             day: 'Hoy',
-                            hour: '13:15',
+                            hour: '14:34',
                             id: '1'
-                        }
+                        },
+                        {
+                            author: 'PAME',
+                            text: 'Hola, todo bien? ',
+                            estado: 'Visto',
+                            day: 'Hoy',
+                            hour: '13:40',
+                            id: '2'
+                        },
         ]
         
     },
@@ -52,10 +85,10 @@ export const MOOK_CONTACTOS =[
         mensajes:[
                     {
                         author: 'Yo',
-                        text: 'SOY ROCKY ',
+                        text: 'Buen dia ',
                         estado: 'Visto',
                         day: 'Hoy',
-                        hour: '13:15',
+                        hour: '08:08',
                         id: '1'
                     }
                 ]   
@@ -71,10 +104,29 @@ export const MOOK_CONTACTOS =[
         mensajes:[
                     {
                         author: 'Yo',
-                        text: 'SOY JUAN ',
+                        text: 'Hola!! ',
                         estado: 'Visto',
                         day: 'Hoy',
-                        hour: '13:15',
+                        hour: '23:56',
+                        id: '1'
+                    }
+                ]
+    },
+    {
+        nombre:  "Miguel",
+        apellido: "Rodriguez" ,
+        id: 5,
+        telefono: '3584577456',
+        direccion:"Ruta 04",
+        email: "miguel@gmail.com" ,
+        thumbnail:"https://www.creartuavatar.com/images/m6.svg",
+        mensajes:[
+                    {
+                        author: 'Yo',
+                        text: 'Buenas tardes ',
+                        estado: 'Visto',
+                        day: 'Hoy',
+                        hour: '18:00',
                         id: '1'
                     }
                 ]

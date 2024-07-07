@@ -1,12 +1,10 @@
-/* Siguiendo la tarea de e-commerce:
-HOME es mi CONTACTOS
-DETAIL/CONTACT es mi CHATSCREEN*/
+/* ESTO ES LA PANTALLA DE CONTACTOS QUE CONTIENE FOTO, NOMBRE Y APELLIDO Y MENSAJE)*/
 
 import React from 'react'
 import "./contactos.css"
 import { MOOK_CONTACTOS } from '../../../Mook'
 import { Link } from 'react-router-dom'
-
+import "./contactos.css"
 
 
 
@@ -14,27 +12,38 @@ export const Contactos = () => {
 
 
     return (
+    
     <>
             <div className='contact-screen'>
-                <h2 className='contacto-titulo'>Contactos</h2>
+                <div className='contactos-header'>
+                    <span className='titulos-contactos'>Chats</span>
+                </div>
+
                 {MOOK_CONTACTOS.map(contacto=>{
 
                     return(
                     <div className= "contact-cont" key = {contacto.id}>
-                        
-                        <Link to = {"/prueba/" + contacto.id}><img className='photos' src= {contacto.thumbnail} alt="profile-photos" /></Link>
-                    
-                        <h2>{contacto.nombre} {contacto.apellido}</h2>
+                        <div className='contacto-data'>
+                            <Link to = {"/prueba2/" + contacto.id}><img className='photos' src= {contacto.thumbnail} alt="profile-photos" /></Link>
+                            <div className='contacto-mje-nombre'>
+                                <span className='nombre-cont'>{contacto.nombre} {contacto.apellido}</span>
+                                <p className='mensaje-cont'> {contacto.mensajes[0].text}</p>
+                            </div>
+                        </div>
                             
-                        <p>{contacto.mensajes[0].text}</p>   
-                    
+                        <div>
+                            
+                            <span className='hour'>{contacto.mensajes[0].hour}</span>
+                        </div>
+                        
                     </div>
 
                     )
+                    
                 })}
+                
             </div>
-            <h2>componente contacto</h2>
-        </> )
+    </>)
 }
 
 

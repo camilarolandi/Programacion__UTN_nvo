@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jacquard+24&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
+
 *{ 
     padding: 0px;
     margin: 0px;
@@ -9,26 +10,104 @@
 }
 
 
+body{
+    background-color: #f7c3e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
 .contact-screen{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    border: 1px solid black;
+    border: 3px solid #530031;
     border-radius: 20px;
     padding: 20px;
     gap:20px;
+    background-color:  #88004f;
+    height: 600px;
+    width: 400px;
 }
 
 .photos{
-    width: 90px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
     border-radius: 100%;
-    border: 2px solid black;
+    border: 3px solid  #530031;
 }
 
 .contact-cont{
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    gap:10px;
+    gap: 30px;
+    padding:5px;
+    border-radius:20px;
+    background-color: #ad1f72;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.contacto-mje-nombre{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 5px;
+    height: auto;
+    width: 100%;
+    padding: 5px;
+
+
+}
+.contacto-data{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 5px;
+gap: 10px;
+height: auto;
+width: 80%;
+
+}
+
+.titulos-contactos{
+padding: 10px;
+font-size: 170%;
+font-weight: bold;
+color:#2c0023;
+
+
+}
+
+.contactos-header{
+    display: flex;
+}
+
+
+.mensaje-cont{
+font-size: 90%;
+padding: 3px
+
+}
+
+.nombre-cont{
+padding: 3px;
+width: 100%;
+height: 100%;
+font-size: 100%;
+border-radius:20px;
+font-weight: bold;
+/* color:#36002b; */
+color:#2c0023;
+
+}
+
+.hour{
+padding: 5px;
+font-size: 85%;
 }
