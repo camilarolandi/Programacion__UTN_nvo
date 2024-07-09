@@ -19,9 +19,8 @@ export const ContactoData = () => {
                             </div>
                             <div className='contenedor_data'>
                             <p className='estado'>{contacto.estado} </p>
-                                <span className='email'>Email: {contacto.email}</span>
+                                <span className='email'>{contacto.email}</span>
                                 <span className='direccion'>{contacto.direccion} </span>
-                                <span className='ultimaconexion'>{contacto.ultima_conexion} </span>
                             </div>
                     </div>
                 )}
@@ -31,36 +30,9 @@ export const ContactoData = () => {
 
 
 
-/* 
-    export const ContactoData = () => {
-        return (
-    
-            <div className='contacts'>
-                {MOOK_CONTACTOS.map(contacto=>{
-                    return(
-                        <div className= "contact-cont" key = {contacto.id}>
-                            <div className='contacto-foto-nombre'>
-                                <img className='photos' src= {contacto.thumbnail} alt="profile-photos" />
-                                <span className='nombre-cont'>{contacto.nombre} {contacto.apellido}</span>
-                                <Link className='flecha' to = {"/screen/" + contacto.id}><i class="bi bi-arrow-left"></i></Link>
-                            </div>
-                            <div className='contacto-datos'>
-                                <span className='hour'>{contacto.telefono}</span>
-                                <p className='estado'>{contacto.estado}</p>
-                                <span>{contacto.email}</span>
-                            </div>
-                            
-                        </div>
-                    )
-                })}
-            </div> 
-        )
-    }
-        */
 
 
 
 
 
 
-      
