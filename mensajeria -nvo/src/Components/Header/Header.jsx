@@ -17,7 +17,11 @@ const {contactoID } = useParams();
 				<Link className='flecha' to = {"/contactos/" + contacto.id}><i class="bi bi-arrow-left"></i></Link>
 					<div className='contenedor-contacto'>
 					<Link className='photo-link' to = {"/contactodata/" + contacto.id}><img className='photos' src= {contacto.thumbnail} alt="profile-photos" /></Link>	
-					<span className='nombre'>{contacto.nombre} {contacto.apellido}</span>
+					<div className='contenedor-nombre'>
+						<span className='nombre'>{contacto.nombre} {contacto.apellido}</span>
+						<span className='mensaje-texto'>{contacto.estado_contacto} </span>
+					</div>
+					
 				</div>
 				<div className='btns-header'>
 					<button className='btn' ><i class="bi bi-telephone"></i></button>

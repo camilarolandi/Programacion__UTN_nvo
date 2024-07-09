@@ -1,3 +1,4 @@
+/* La pantalla con la info del contacto */
 import React from 'react'
 import { MOOK_CONTACTOS } from '../../../Mook'
 import { Link, useParams } from 'react-router-dom'
@@ -20,6 +21,7 @@ export const ContactoData = () => {
                             <p className='estado'>{contacto.estado} </p>
                                 <span className='email'>Email: {contacto.email}</span>
                                 <span className='direccion'>{contacto.direccion} </span>
+                                <span className='ultimaconexion'>{contacto.ultima_conexion} </span>
                             </div>
                     </div>
                 )}

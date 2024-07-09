@@ -10,7 +10,7 @@ export const MOOK_CONTACTOS =[
         direccion:"San Juan 123",
         email: "lola@gmail.com" ,
         thumbnail: "https://www.creartuavatar.com/images/f10.svg",
-        ultima_conexion: 'ayer',
+        estado_contacto:"En linea",
         mensajes:[
                     {
                         author: 'Yo',
@@ -39,7 +39,7 @@ export const MOOK_CONTACTOS =[
                         {
                             author: 'Yo',
                             text: 'Que haces? ',
-                            estado: 'Visto',
+                            estado: 'Entregado',
                             day: 'Hoy',
                             hour: '13:17',
                             id: '4'
@@ -56,6 +56,7 @@ export const MOOK_CONTACTOS =[
         direccion:"Moreno 1003",
         email: "pamela@gmail.com" ,
         thumbnail: "https://www.creartuavatar.com/images/f9.svg",
+        estado_contacto:"En linea",
         mensajes:[
                     {
                         author: 'Yo',
@@ -73,6 +74,31 @@ export const MOOK_CONTACTOS =[
                         hour: '13:40',
                         id: '2'
                     },
+                    {
+                        author: 'Yo',
+                        text: 'Hola, si y vos? ',
+                        estado: 'Visto',
+                        day: 'Hoy',
+                        hour: '13:15',
+                        id: '3'
+                    },
+                    {
+                        author: 'Yo',
+                        text: 'Todo bien ',
+                        estado: 'Visto',
+                        day: 'Hoy',
+                        hour: '13:16',
+                        id: '4'
+                    },
+                    {
+                        author: 'Pame',
+                        text: 'Que haces? ',
+                        estado: 'Visto',
+                        day: 'Hoy',
+                        hour: '13:17',
+                        id: '5'
+                    },
+                    
     ]
     
 },
@@ -85,6 +111,7 @@ export const MOOK_CONTACTOS =[
     direccion:"Salta 312",
     email: "rocky@gmail.com" ,
     thumbnail:"https://www.creartuavatar.com/images/m21.svg",
+    estado_contacto:"",
     mensajes:[
                 {
                     author: 'Rocky',
@@ -125,6 +152,7 @@ export const MOOK_CONTACTOS =[
     direccion:"Corrrientes 987",
     email: "miguel@gmail.com" ,
     thumbnail:"https://www.creartuavatar.com/images/m6.svg",
+    estado_contacto:"Escribiendo...",
     mensajes:[
                 {
                     author: 'Yo',
@@ -145,6 +173,7 @@ export const MOOK_CONTACTOS =[
     direccion:"Salvador 12",
     email: "carolina@gmail.com" ,
     thumbnail:"https://www.creartuavatar.com/images/f24.svg",
+    estado_contacto:"",
     mensajes:[
                 {
                     author: 'Carolina',
@@ -165,6 +194,7 @@ export const MOOK_CONTACTOS =[
     direccion:"Ruta 23",
     email: "valeria@gmail.com" ,
     thumbnail:"https://www.creartuavatar.com/images/f15.svg",
+    estado_contacto:"Escribiendo",
     mensajes:[
                 {
                     author: 'Valeria',
@@ -175,6 +205,6 @@ export const MOOK_CONTACTOS =[
                     id: '1'
                 }
             ]
-},
+}, 
 ]
 

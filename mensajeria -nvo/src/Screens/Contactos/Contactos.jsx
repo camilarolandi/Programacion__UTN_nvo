@@ -1,7 +1,4 @@
-/* ESTO ES LA PANTALLA DE CONTACTOS QUE CONTIENE FOTO, NOMBRE Y APELLIDO Y MENSAJE)
-SERIA HOME
-
-*/
+/* Pantalla de contactos*/
 
 import React from 'react'
 import { MOOK_CONTACTOS } from '../../../Mook'

@@ -10,7 +10,6 @@
 
 
 
-
 .header{
     background-color:#88004f;
     border-bottom: 3px solid #88004f;
@@ -49,7 +48,7 @@
 .nombre{
     font-size: 100%;
     font-weight: bold;
-    width: 60%;
+    width: 80%;
     height: 40%;
     color:#2c0023;
 
@@ -65,12 +64,12 @@
 
 
 .btns-header{
-padding: 5px;
+padding: 3px;
 display: flex;
 justify-content: space-between;
-width: 20%;
+width: 25%;
 height: 100%;
-gap: 3px;
+gap: 5px;
 overflow: hidden;
 align-items: center;
 
@@ -87,4 +86,11 @@ align-items: center;
     width: 100%;
     height:100%;
     
+}
+
+.contenedor-nombre{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 90%;
 }

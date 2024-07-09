@@ -44,7 +44,6 @@
 }
 
 
-/* esto le da estilo al cuadro azul/ al que contiene al cuadro de chat */
 .contenedor-chat{
     padding: 5px;
     width: 100%;
@@ -85,7 +84,7 @@
 .contenedor-inferior{
     padding: 5px;
     display: flex;
-    gap: 20px;
+    gap: 15px;
     font-size: 80%;
     font-size: 55%;
     height: 20%;
@@ -113,7 +112,14 @@
 
 }
 
+.estado-cont{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
 
 
+.day-hour{
+    width: 100%;
 
-
+}
