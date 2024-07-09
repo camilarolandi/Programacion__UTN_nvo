@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import "./chatscreen.css"
 import { ChatHeader, ListaMensajes, MensajeForm } from '../Chat'
-import { MOOK_CONTACTOS } from '../../../Mook'
 import { MOOK_MENSAJES } from '../../../dataMensajes'
 
 /* mensajes: contiene los datos que se le pasa a useState: MOOK
@@ -30,12 +29,12 @@ export const ChatScreen = () => {
         
         <div className='chat'>
         <ChatHeader/>
-        <ListaMensajes mensajes_info = {mensajes_data} />
+        <ListaMensajes mensaje_info = {mensajes_data} />
         <MensajeForm enviarMensaje = {newMensaje}/>
         </div>
         <h2>Hola</h2>
         </>
- 
+
     )
 }  
 

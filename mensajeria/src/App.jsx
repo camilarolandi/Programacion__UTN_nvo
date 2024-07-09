@@ -1,7 +1,6 @@
 /* cuando escribo JSX hago el import con import */
 /* aca en App importo el screen de chat */
 import React from 'react'
-
 import { Route, Routes } from 'react-router-dom'
 import { Contactos } from './Components/Contactos'
 import { Prueba } from './prueba/Prueba'
@@ -19,7 +18,7 @@ return(
         <Route path = "/prueba/" element = {<Prueba/>}/> 
 		<Route path = "/prueba2/:pruebaID" element = {<Prueba2/>}/> 
 		<Route path = "/header/" element = {<Header/>}/> 
-        <Route path="/contactos/:pruebaID" element={<Contactos />} />
+        <Route path= "/contactos/:pruebaID" element={<Contactos/>} />
         
     </Routes>
     )

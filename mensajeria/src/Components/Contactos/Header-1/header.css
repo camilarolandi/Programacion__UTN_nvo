@@ -21,6 +21,7 @@
     padding: 5px 15px ;
     align-items: center;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
 .header .flecha{
@@ -54,8 +55,8 @@
 }
 
 .profile-photo{
-    height: 70px;
-    width: 70px;
+    height: 65px;
+    width: 65px;
     border-radius: 100%;
     border: 2px solid black;
 }

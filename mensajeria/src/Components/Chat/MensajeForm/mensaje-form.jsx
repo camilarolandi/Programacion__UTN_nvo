@@ -17,7 +17,7 @@ export const  MensajeForm= ({enviarMensaje}) => {
             <form className='formulario' onSubmit = {handleSubmitNewMensaje}>
             
                 <input className= "input-texto" type="text" name="mensaje" id="mensaje" placeholder='Mensaje'/>
-                <button className= "btn" type='submit'><i class="bi bi-send"></i></button>
+                <button className= "btn" type='submit'><i className="bi bi-send"></i></button>
             </form>
     
         </div>

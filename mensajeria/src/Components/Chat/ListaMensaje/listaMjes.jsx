@@ -1,12 +1,12 @@
 /* este componente mapea, llama a mensaje */
-
-import React from 'react'
+/* recibe el array de mensajes */
+/* import React from 'react'
 import { Mensaje } from '../Mensaje/mje'
 import "./listamensaje.css"
 
 
 
-/* recibe el array de mensajes */
+
 
 export const ListaMensajes = ({mensajes_info}) => {
     
@@ -18,3 +18,4 @@ export const ListaMensajes = ({mensajes_info}) => {
     </div>
     )
 }
+ */

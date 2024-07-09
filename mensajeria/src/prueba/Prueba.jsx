@@ -6,6 +6,9 @@ import "./prueba.css"
 /*similar a contac
 lista y MENSAJES */
 
+
+/* funciona pero no envia */
+
 export const Prueba = ({contacto}) => {
 
         return (
@@ -35,27 +38,76 @@ export const Prueba = ({contacto}) => {
 
 
 
-/* 
 
 
-    export const Prueba = ({contacto}) => {
-
+    /* export const Prueba = ({mensajes}) => {
+        const {author, text, estado, day, hour, id} = mensajes
+     
         return (
             <div className='contenedor-chats'>
-                {contacto.mensajes.map(mensaje=>(
-                        <div className='chats' key={mensaje.id}>
-                        
-                            <span>{mensaje.author} </span>
-                            <p>{mensaje.text}</p>
-                            <div className='contenedor-estados'>
-                                <span> {mensaje.estado}</span>
-                                <span>{mensaje.day} {mensaje.hour}</span>
+
+                    <div className= {`contenedor-chat ${author === "Yo" && "derecha"} `} key= {id}>  
+                        <div className={`chats ${author === "Yo" && "der"}`}>
+                            <span className='author'>{author} </span>
+                            <p className='mensaje-texto'>{text}</p>
+                            
+                            <div className='contenedor-inferior'>
+                                <span>{day} {hour}</span>
+                                <span > {estado}</span>
+                            
                             </div>
+                        
                         </div>
+                    </div>
                     
-                ))}
+            </div>
+        
+        )
+    } 
+        
+        
+         */
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /* return (
+            <div className='contenedor-chats' style={{justifyContent: dir}}>
+                <div className='contenedor' style={{ backgroundColor: color}}>
+                    <h3 className='author'>{author}</h3>
+                    <p className='mensaje-texto'> {text} </p>
+                    
+                    <div className='contenedor-inferior'>
+                        <span className='day-hour'>{day} {hour}</span>
+                        <div className= "estado-contenedor">
+                            <span className='estado'>{estado}</span>
+                        </div>
+                    </div>         
+                </div>
+            </div> 
             
+        
+        )
     
-        </div>
-    )
-    } */
+    }
+ */
+
+
+
+
+
+
+
+
